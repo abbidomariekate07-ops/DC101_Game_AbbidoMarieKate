@@ -75,7 +75,7 @@ Instructions to Run the Game
 
 Method 1: Play Online (Recommended)
 
-Live Demo: [https://abbidomariekate07-ops.github.io/DC101_Game_AbbidoMarieKate/](https://abbidomariekate07-ops.github.io/DC101_Game_AbbidoMarieKate/)
+Live Demo: [https://abbidomariekate07-ops.github.io/DC101_Game_AbbidoMarieKate/)
 
 Method 2: Download and Run Locally
 
