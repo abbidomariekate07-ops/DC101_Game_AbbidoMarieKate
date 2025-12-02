@@ -1,10 +1,9 @@
-# Mole Mayhem - Whack-a-Mole Game
+Mole Mayhem - Whack-a-Mole Game
 
 A fun and interactive browser-based Whack-a-Mole game built with HTML, CSS, and JavaScript.
 
----
 
-## Project Information
+Project Information
 
 - Student Name: Marie Kate Abbido
 - Section: BSCS 2D
