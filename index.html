@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mole Mayhem - A fun browser-based Whack-a-Mole game">
+    <meta name="author" content="Marie Kate Abbido">
+    <title>Mole Mayhem - Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Container -->
+    <div class="game-container">
+        <!-- Header Section -->
+        <header class="game-header">
+            <h1>🎮 Mole Mayhem 🎮</h1>
+            <p class="tagline">Whack those pesky moles!</p>
+        </header>
+
+        <!-- Game Stats Section -->
+        <section class="game-stats">
+            <div class="stat-box">
+                <span class="stat-label">Score:</span>
+                <span class="stat-value" id="score">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Time:</span>
+                <span class="stat-value" id="timer">30</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">High Score:</span>
+                <span class="stat-value" id="highScore">0</span>
+            </div>
+        </section>
+
+        <!-- Game Board -->
+        <main class="game-board" id="gameBoard">
+            <!-- 9 Mole Holes -->
+            <div class="hole" data-index="0">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="6">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="7">
+                <div class="mole"></div>
+            </div>
+            <div class="hole" data-index="8">
+                <div class="mole"></div>
+            </div>
+        </main>
+
+        <!-- Control Buttons -->
+        <section class="controls">
+            <button class="btn btn-start" id="startBtn">Start Game</button>
+            <button class="btn btn-settings" id="settingsBtn">⚙️ Info</button>
+        </section>
+
+        <!-- Game Over Modal -->
+        <div class="modal" id="gameOverModal">
+            <div class="modal-content">
+                <h2>🎉 Game Over! 🎉</h2>
+                <p class="final-score">Your Score: <span id="finalScore">0</span></p>
+                <button class="btn btn-restart" id="restartBtn">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Settings/Info Modal -->
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeSettings">&times;</span>
+                <h2>📋 Game Information</h2>
+
+                <div class="info-section">
+                    <h3>📝 Project Information</h3>
+                    <p><strong>Student Name:</strong> Marie Kate Abbido</p>
+                    <p><strong>Section:</strong> BSCS 2D</p>
+                    <p><strong>Subject:</strong> DC 101 - Web Development</p>
+                    <p><strong>Project Type:</strong> Mini Arcade - Browser Game</p>
+                    <p><strong>Submission Date:</strong> December 2025</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🎯 Game Description</h3>
+                    <p>Mole Mayhem is an exciting browser-based Whack-a-Mole game where players test their reflexes and hand-eye coordination. Click on the moles as they pop up from their holes to score points before time runs out!</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🎮 How to Play</h3>
+                    <ul>
+                        <li>Click the "Start Game" button to begin</li>
+                        <li>Moles will randomly pop up from holes</li>
+                        <li>Click on the moles as fast as you can</li>
+                        <li>Each successful hit gives you 10 points</li>
+                        <li>You have 30 seconds to score as high as possible</li>
+                        <li>Try to beat your high score!</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>✨ Game Features</h3>
+                    <ul>
+                        <li>⏱️ 30-second countdown timer</li>
+                        <li>🏆 Score tracking system</li>
+                        <li>💾 Persistent high score storage</li>
+                        <li>🎨 Smooth animations and transitions</li>
+                        <li>📱 Fully responsive design</li>
+                        <li>🎉 Performance feedback on game over</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
